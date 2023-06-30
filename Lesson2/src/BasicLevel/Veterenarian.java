@@ -19,7 +19,7 @@ public class Veterenarian {
     }
 
     public void treatment(Animal animal) {
-        System.out.printf("Hi, I'm Vitia. Lets see your animal!\n....\nHe weight %d kg. He is OK!\n", animal.getWeight());
+        System.out.printf("Hi, I'm %s. Lets see your animal!\n....\nHe weight %d kg. He is OK!\n", this.name, animal.getWeight());
     }
 
     @Override
