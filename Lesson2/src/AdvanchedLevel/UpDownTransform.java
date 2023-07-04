@@ -8,10 +8,11 @@ public class UpDownTransform extends TextTransformer{
     public String transform(String text) {
         String resultText = "";
         for(int i = 0; i < text.length(); i++) {
-            if(i % 2 == 0)
+            if(i % 2 == 0) {
                 resultText += Character.toString(text.charAt(i)).toLowerCase();
-            else
+            } else {
                 resultText += Character.toString(text.charAt(i)).toUpperCase();
+            }
         }
         return resultText;
     }
