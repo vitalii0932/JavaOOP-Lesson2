@@ -20,6 +20,14 @@ public class Cat extends Animal{
     }
 
     @Override
+    public void eat(String ration) {
+        if(super.getRation() == ration)
+            System.out.println("eat... meov!");
+        else
+            System.out.println("I don't eat this!");
+    }
+    
+    @Override
     public void getVoice() {
         System.out.println("meov... meov!!!");
     }
