@@ -25,11 +25,6 @@ public class Dog extends Animal {
     }
 
     @Override
-    public void eat(String ration) {
-        super.eat(ration);
-    }
-
-    @Override
     public void sleep() {
         System.out.println("Good night nice boy!");
     }
