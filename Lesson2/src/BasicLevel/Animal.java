@@ -43,10 +43,11 @@ public class Animal {
     }
 
     public void eat(String ration) {
-        if(this.ration == ration)
+        if(this.ration == ration) {
             System.out.println("eat...");
-        else
+        } else {
             System.out.println("I don't eat this!");
+        }
     }
 
     public void sleep() {
