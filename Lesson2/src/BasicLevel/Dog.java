@@ -20,13 +20,16 @@ public class Dog extends Animal {
     }
 
     @Override
-    public void getVoice() {
-        System.out.println("GAV... GAV!!!");
+    public void eat(String ration) {
+        if(super.getRation() == ration)
+            System.out.println("eat... GAV!");
+        else
+            System.out.println("I don't eat this!");
     }
 
     @Override
-    public void eat(String ration) {
-        super.eat(ration);
+    public void getVoice() {
+        System.out.println("GAV... GAV!!!");
     }
 
     @Override
@@ -36,6 +39,6 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Dog{" + "name='" + name + '\'' + '}';
+        return "Dog{" + "name='" + name + '\'' + ", ration='" + super.getRation() + '\'' + ", color='" + super.getColor() + '\'' + ", weight=" + super.getWeight() + '}';
     }
 }
