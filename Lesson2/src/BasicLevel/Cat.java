@@ -25,6 +25,7 @@ public class Cat extends Animal{
             System.out.println("eat... meov!");
         else
             System.out.println("I don't eat this!");
+<<<<<<< HEAD
     }
 
     @Override
@@ -33,6 +34,16 @@ public class Cat extends Animal{
     }
 
     @Override
+=======
+    }
+    
+    @Override
+    public void getVoice() {
+        System.out.println("meov... meov!!!");
+    }
+
+    @Override
+>>>>>>> 9559dc60e05ab5203ec3dba5c751e3befc1a8d04
     public void sleep() {
         System.out.println("Good night little kitty)");
     }
